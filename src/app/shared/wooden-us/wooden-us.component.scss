@@ -1,0 +1,22 @@
+.us{
+  padding: 0%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title{
+  background-image: url(../../../assets/image/textura-panel.jpg);
+  margin: 10px 10px;
+  padding: 10px 80px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.text{
+  margin: 10px;
+  padding: 10px 90px;
+  text-align: justify;
+  font-size: large;
+}

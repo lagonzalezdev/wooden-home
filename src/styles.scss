@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+@import './config-scss/variables.scss';
+@import './config-scss/reset.scss';
+
+@font-face {
+  font-family: 'japan' ;
+  src: url(../src/assets/font/japan.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;background: var(--white);
+  font-family: 'Alumni Sans', sans-serif;
+}
+
+main{
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
