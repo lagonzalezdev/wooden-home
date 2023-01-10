@@ -1,0 +1,29 @@
+.footer{
+  width: 100%;
+  padding:1em;
+  background-image: url(../../../assets/image/textura-panel.jpg);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color:black;
+}
+
+.logo {
+  width: 80px ;
+  height: 80px;
+  margin: 15px;
+}
+.frase {
+  width: 300px;
+}
+
+.insta{
+  width: 30px;
+  margin: 10px;
+
+}
+
+.sign{
+  width: 80px;
+}

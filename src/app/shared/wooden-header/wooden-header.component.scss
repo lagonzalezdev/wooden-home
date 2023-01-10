@@ -16,28 +16,25 @@
 
 }
 
-__button{
+.button{
         display: none;
         cursor: pointer;
         @media screen and (max-width:480px){
           display: flex;
       }
-  }
-__svg{
+.svg{
     width:2em;
     height:2em;
     fill:white;
 }
 
-__nav{
+.nav{
   @media screen and (max-width:480px){
       width: 100%;
       height:  0vh;
-
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-
       overflow: hidden;
       pointer-events: none;
       transition: all .5s ease;
@@ -48,7 +45,7 @@ __nav{
       }
     }
 
-__ul{
+.ul{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
@@ -58,10 +55,11 @@ __ul{
       flex-direction:column;
   }
 }
-__li{
+.li{
   margin: 0.5em;
   @media screen and (max-width:480px){
       margin: .5em 0;
   }
+}
 }
 }

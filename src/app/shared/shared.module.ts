@@ -6,6 +6,7 @@ import { WoodenHeaderComponent } from './wooden-header/wooden-header.component';
 import { WoodenCarouselComponent } from './wooden-carousel/wooden-carousel.component';
 import { WoodenUsComponent } from './wooden-us/wooden-us.component';
 import { WoodenGalleryComponent } from './wooden-gallery/wooden-gallery.component';
+import { WoodenFooterComponent } from './wooden-footer/wooden-footer.component';
 
 
 
@@ -15,13 +16,15 @@ import { WoodenGalleryComponent } from './wooden-gallery/wooden-gallery.componen
     WoodenCarouselComponent,
     WoodenUsComponent,
     WoodenGalleryComponent,
+    WoodenFooterComponent,
 
   ],
   exports:[
     WoodenHeaderComponent,
     WoodenCarouselComponent,
     WoodenUsComponent,
-    WoodenGalleryComponent
+    WoodenGalleryComponent,
+    WoodenFooterComponent
   ],
   imports: [
     CommonModule
