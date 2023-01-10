@@ -1,0 +1,35 @@
+#fotos h1 {
+  text-align:center;
+}
+.grid-item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 400px));
+  grid-auto-rows: minmax(250px, 150px);
+  gap: 1px;
+  padding: 2px;
+  grid-auto-flow: dense;
+}
+.wide{
+  grid-column: span 2;
+  max-width: 100%;
+}
+.tall{
+  grid-row: span 2;
+  max-width: 100%
+}
+img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}

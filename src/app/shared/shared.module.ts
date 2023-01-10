@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { WoodenHeaderComponent } from './wooden-header/wooden-header.component';
 import { WoodenCarouselComponent } from './wooden-carousel/wooden-carousel.component';
 import { WoodenUsComponent } from './wooden-us/wooden-us.component';
+import { WoodenGalleryComponent } from './wooden-gallery/wooden-gallery.component';
 
 
 
@@ -13,12 +14,14 @@ import { WoodenUsComponent } from './wooden-us/wooden-us.component';
     WoodenHeaderComponent,
     WoodenCarouselComponent,
     WoodenUsComponent,
+    WoodenGalleryComponent,
 
   ],
   exports:[
     WoodenHeaderComponent,
     WoodenCarouselComponent,
-    WoodenUsComponent
+    WoodenUsComponent,
+    WoodenGalleryComponent
   ],
   imports: [
     CommonModule
