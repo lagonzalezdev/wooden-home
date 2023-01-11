@@ -1,0 +1,15 @@
+<nav id="header">
+  <ul>
+<li class="logotype">
+  <a href="#"><img src="../../../assets/image/logo-wooden.svg" alt="logo-wooden"></a>
+</li>
+<li class="burger" (click)="toggleMenu()">
+  <img src="../../../assets/image/cart.svg"> {{ isMenuOpen ? "close" : "menu"}} 
+</li>
+<li class="menu" [class.is.open]="isMenuOpen">
+  <a href="home" class="menu-item">Home</a>
+  <a href="store"class="menu-item">Store</a>
+  <a href="#"><img src="../../../assets/image/cart.svg"></a>
+</li>
+</ul>
+</nav>

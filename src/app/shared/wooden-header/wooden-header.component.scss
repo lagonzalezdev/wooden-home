@@ -1,65 +1,65 @@
-.header{
-  width: 100%;
-  padding:1em;
-  background-image: url(../../../assets/image/textura-panel.jpg);
-  display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+$menuBreakpoint: 768px;
+$menuHeight: 90px;
+
+#header{
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-image: url(../../../assets/image/textura-panel.jpg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 
-    color:black;
-}
+  .logotype {
+    margin: 15px ;
+    height: 80px;
+    width: 80px;
+    }
+  
 
-.logo {
-  width: 80px ;
-  width: 80px;
+  .burger {
+    padding: 0 10px;
+    display: none;
+    cursor: pointer;
 
-}
-
-.button{
-        display: none;
-        cursor: pointer;
-        @media screen and (max-width:480px){
-          display: flex;
-      }
-.svg{
-    width:2em;
-    height:2em;
-    fill:white;
-}
-
-.nav{
-  @media screen and (max-width:480px){
-      width: 100%;
-      height:  0vh;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      pointer-events: none;
-      transition: all .5s ease;
-
-      &--activo{
-        height: 50vh;
-        pointer-events: auto;
-      }
+    i {
+      color: rgb(0, 0, 0);
+      line-height: $menuHeight;
     }
 
-.ul{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
+    @media (max-width: $menuBreakpoint) {
+      display: block;
+    }
+  }
 
-  @media screen and (max-width:480px){
-      flex-direction:column;
+  .menu {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $menuBreakpoint) {
+      display: none;
+
+      &.is-open {
+        display: block;
+        position: absolute;
+        top: #{$menuHeight + 2};
+        width: 100%;
+
+        }
+    }
+
+    .menu-item {
+      padding: 0 10px;
+      height: $menuHeight;
+      line-height: $menuHeight;
+      text-decoration: none;
+      display: block;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #000000;
+    }
   }
-}
-.li{
-  margin: 0.5em;
-  @media screen and (max-width:480px){
-      margin: .5em 0;
-  }
-}
-}
 }

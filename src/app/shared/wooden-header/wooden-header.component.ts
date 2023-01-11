@@ -7,7 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./wooden-header.component.scss']
 })
 export class WoodenHeaderComponent implements OnInit{
-
+  isMenuOpen = false;
+  toggleMenu(): void{
+    this.isMenuOpen = this.isMenuOpen;
+  }
   public active : boolean = false
 
   constructor(private router: Router){}
