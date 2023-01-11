@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'wooden-header',
@@ -9,13 +10,15 @@ export class WoodenHeaderComponent implements OnInit{
 
   public active : boolean = false
 
-  constructor(){}
+  constructor(private router: Router){}
 
   ngOnInit(): void {}
 
     setActive() :void{
       this.active = !this.active
     }
-
+  navegar(){
+    this.router.navigate(['/']);
+    this.router.navigate(['/store'])
   }
-
+}
