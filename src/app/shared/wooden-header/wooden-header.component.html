@@ -1,11 +1,14 @@
 <nav id="header">
   <ul>
+<!--logo-->
 <li class="logotype">
   <a href="#"><img src="../../../assets/image/logo-wooden.svg" alt="logo-wooden"></a>
 </li>
+<!--menu img-->
 <li class="burger" (click)="toggleMenu()">
-  <img src="../../../assets/image/cart.svg"> {{ isMenuOpen ? "close" : "menu"}} 
+  <a href="store"><img src="../../../assets/image/cart.svg"> {{ isMenuOpen ? "close" : "cart"}}</a>
 </li>
+<!--menu list-->
 <li class="menu" [class.is.open]="isMenuOpen">
   <a href="home" class="menu-item">Home</a>
   <a href="store"class="menu-item">Store</a>

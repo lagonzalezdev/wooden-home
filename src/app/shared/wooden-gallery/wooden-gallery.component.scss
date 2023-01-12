@@ -1,7 +1,9 @@
 #photos h1 {
   text-align:center;
+
 }
-.grid-item{
+/*.grid-item{
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -10,12 +12,11 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-}
+}*/
+
 .grid-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 400px));
-  grid-auto-rows: minmax(250px, 150px);
-  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
 }
 .wide{
   grid-column: span 2;

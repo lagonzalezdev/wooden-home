@@ -13,12 +13,12 @@ import { StoreComponent } from './store/store.component';
 @NgModule({
   declarations: [
     HomeComponent,
-    StoreComponent
+    StoreComponent,
   ],
   imports: [
     CommonModule,
     RoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class PagesModule { }
