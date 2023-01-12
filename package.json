@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "whatsapp-web.js": "^1.17.1"
   },
   "private": true,
   "dependencies": {

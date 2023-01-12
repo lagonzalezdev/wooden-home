@@ -5,8 +5,13 @@
   width: 360px;
   min-height: 100vh;
   padding: 20px;
+  transition: 0,3;
+  background-color: white;
 
   box-shadow: -2px 0 4px hsl(0, 4%, 15% );
+}
+.cart.active{
+  right: 0;
 }
 .cart-title{
   text-align: center;
@@ -79,6 +84,8 @@
   position: absolute;
   top: 8rem;
   left: 9rem;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .title{
